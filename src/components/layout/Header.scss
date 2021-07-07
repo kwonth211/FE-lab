@@ -1,0 +1,15 @@
+header {
+  position: fixed;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+
+  & > a {
+    font-size: 20px;
+    margin: {
+      left: 10px;
+      right: 10px;
+    }
+  }
+}

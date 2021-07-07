@@ -1,0 +1,29 @@
+{
+  "futurewizDefaultComponent": {
+    "prefix": "hookTemplate",
+    "body": [
+      "import React from 'react'",
+      "",
+      "",
+      "export interface ${TM_FILENAME_BASE}Props {",
+      "  children?: React.ReactNode",
+      "}",
+      "",
+      "const ${TM_FILENAME_BASE} = ({",
+      "  children",
+      "}: ${TM_FILENAME_BASE}Props) => {",
+      "  $1",
+      "  return (",
+      "    <div",
+      "      className={classes.root}",
+      "    >",
+      "      {children}",
+      "    </div>",
+      "  )",
+      "}",
+      "export default ${TM_FILENAME_BASE}",
+      ""
+    ],
+    "description": "hookTemplate"
+  }
+}
