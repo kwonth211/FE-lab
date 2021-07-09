@@ -1,0 +1,21 @@
+.root {
+  width: 400px;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin : {
+    bottom: 10px;
+  }
+}
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.submit-button {
+  width: 100px;
+  height: 20px;
+  background-color: royalblue;
+  text-align: center;
+}

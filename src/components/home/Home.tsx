@@ -5,6 +5,6 @@ export interface HomeProps {
 }
 
 const Home = ({ children }: HomeProps) => {
-  return <div>Hello world!</div>;
+  return <div>Welcome to FE laboratory!</div>;
 };
 export default Home;
