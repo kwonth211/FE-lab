@@ -23,6 +23,8 @@
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "no-debugger": "off",
     "react/display-name": "off",
-    "no-empty-pattern": "off"
+    "no-empty-pattern": "off",
+    "react/prop-types": "off",
+    "react/jsx-key": "warn"
   }
 }

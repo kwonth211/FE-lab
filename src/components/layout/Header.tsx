@@ -11,6 +11,7 @@ const Header = () => {
     <header>
       <Link to="/">Main</Link>
       <Link to="/form">Form</Link>
+      <Link to="/todo">Todo</Link>
     </header>
   );
 };
