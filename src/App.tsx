@@ -1,11 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import Form from '@/components/form/Form';
-import Todo from '@/components/todo/Todo';
-import Layout from '@/components/layout/Layout';
+import Form from './components/form/Form';
+import Todo from './components/todo/Todo';
+import Layout from './components/layout/Layout';
 import './App.scss';
 import Home from './components/home/Home';
-
+import Vanila from './components/vanila/index';
 /* 
     1. HOME (게임 또는 interaction view)
     2. form Test
@@ -14,6 +14,7 @@ import Home from './components/home/Home';
     5. memoization
 
 */
+
 const App = () => {
   return (
     <Router>
@@ -21,6 +22,7 @@ const App = () => {
         <Route exact={true} path="/" component={Home} />
         <Route path="/form" component={Form} />
         <Route path="/todo" component={Todo} />
+        <Route path="/vanila" component={Vanila} />
       </Layout>
     </Router>
   );

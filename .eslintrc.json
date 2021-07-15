@@ -25,6 +25,7 @@
     "react/display-name": "off",
     "no-empty-pattern": "off",
     "react/prop-types": "off",
-    "react/jsx-key": "warn"
+    "react/jsx-key": "warn",
+    "no-var-requires": "warn"
   }
 }

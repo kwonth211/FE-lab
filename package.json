@@ -12,10 +12,12 @@
     "@types/react": "^17.0.13",
     "@types/react-dom": "^17.0.0",
     "@types/react-router-dom": "^5.1.7",
+    "craco-interpolate-html-plugin": "^0.0.5",
     "css-loader": "^5.2.6",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",
+    "html-loader": "^2.1.2",
     "node-sass": "^6.0.1",
     "prettier": "^2.3.2",
     "react": "^17.0.2",
@@ -29,7 +31,7 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "dev": "craco start",
+    "dev": "react-scripts start",
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
@@ -57,9 +59,11 @@
     "@typescript-eslint/eslint-plugin": "^4.28.2",
     "@typescript-eslint/parser": "^4.28.2",
     "craco-alias": "^3.0.1",
+    "customize-cra": "^1.0.0",
     "eslint": "^7.30.0",
     "eslint-plugin-react": "^7.24.0",
     "node-sass": "^6.0.0",
+    "react-app-rewired": "^2.1.8",
     "sass-loader": "^11.1.1"
   }
 }
