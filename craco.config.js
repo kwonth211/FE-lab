@@ -1,4 +1,17 @@
-// /* eslint-disable @typescript-eslint/no-var-requires */
+const interpolateHtml = require('craco-interpolate-html-plugin');
+
+module.exports = {
+  plugins: [
+    {
+      plugin: interpolateHtml,
+      // Enter the variable to be interpolated in the html file
+      options: {
+        preText: 'This is Interpolate Html Option',
+      },
+    },
+  ],
+};
+
 // const CracoAlias = require('craco-alias');
 // const { when, whenDev, whenProd, whenTest, ESLINT_MODES, POSTCSS_MODES } = require('@craco/craco');
 // const interpolateHtml = require('craco-interpolate-html-plugin');
