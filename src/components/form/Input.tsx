@@ -5,7 +5,22 @@ interface ControlledInputProps {
   onChange?: (e: string) => void;
 }
 
-export const ControlledInput = memo(({ value, onChange }: ControlledInputProps) => {
+export const ControlledInput = ({ value, onChange }: ControlledInputProps) => {
+  useEffect(() => {
+    console.log('render Controlled Input');
+  });
+
+  return (
+    <input
+      value={value}
+      onChange={(e) => {
+        onChange?.(e.target.value);
+      }}
+    />
+  );
+};
+
+export const MemoControlledInput = memo(({ value, onChange }: ControlledInputProps) => {
   useEffect(() => {
     console.log('render Controlled Input');
   });
