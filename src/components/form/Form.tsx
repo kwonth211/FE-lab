@@ -5,14 +5,13 @@ import './Form.scss';
 type injectType = ElementRef<typeof UnControlledInput>;
 
 const Form = () => {
-  const [value, setValue] = useState('');
   const [inputComponentValue, setInputComponentValue] = useState('');
   const inputRef = useRef<HTMLInputElement>(null);
   const injectRef = useRef<injectType>(null);
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log('1. controlledForm : ', value);
+    // console.log('1. controlledForm : ', value);
     console.log('2. unContolledForm :', inputRef?.current?.value);
     console.log('3. injectRef', injectRef?.current?.value);
   };
@@ -22,12 +21,7 @@ const Form = () => {
       <form id="test" onSubmit={handleSubmit}>
         <div className="row">
           Pure Input
-          <input
-            value={value}
-            onChange={(e) => {
-              setValue(e.target.value);
-            }}
-          />
+          <Input />
         </div>
         <div className="row">
           Ref Input
@@ -49,4 +43,16 @@ const Form = () => {
   );
 };
 
+const Input = () => {
+  const [value, setValue] = useState('');
+
+  return (
+    <input
+      value={value}
+      onChange={(e) => {
+        setValue(e.target.value);
+      }}
+    />
+  );
+};
 export default Form;

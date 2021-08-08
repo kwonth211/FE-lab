@@ -26,6 +26,8 @@
     "no-empty-pattern": "off",
     "react/prop-types": "off",
     "react/jsx-key": "warn",
-    "no-var-requires": 0
+    "no-var-requires": 0,
+    "@typescript-eslint/no-empty-function": "off",
+    "@typescript-eslint/no-this-alias": "off"
   }
 }

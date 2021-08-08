@@ -13,6 +13,7 @@ const Header = () => {
       <Link to="/form">Form</Link>
       <Link to="/todo">Todo</Link>
       <Link to="/stateManagement">State management</Link>
+      <Link to="/react-datetime">React datetime</Link>
     </header>
   );
 };

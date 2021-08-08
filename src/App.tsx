@@ -7,12 +7,15 @@ import './App.scss';
 import Home from './components/home/Home';
 import Vanila from './components/vanila/index';
 import StateManangement from './components/state-management';
+import ReactDatetime from './components/react-datetime/ReactDatetime';
+
 /* 
     1. HOME (게임 또는 interaction view)
     2. form Test
     3. state management
     4. vanlia JS
     5. memoization
+    6. react-datetime
 
 */
 
@@ -25,6 +28,7 @@ const App = () => {
         <Route path="/todo" component={Todo} />
         <Route path="/vanila" component={Vanila} />
         <Route path="/stateManagement" component={StateManangement} />
+        <Route path="/react-datetime" component={ReactDatetime} />
       </Layout>
     </Router>
   );
