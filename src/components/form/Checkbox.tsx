@@ -1,4 +1,4 @@
-import React, { ChangeEvent, memo, MouseEvent } from 'react';
+import React, { ChangeEvent, memo } from 'react';
 
 interface ControlledCheckboxProps {
   value?: boolean;

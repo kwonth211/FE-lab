@@ -1,4 +1,4 @@
-import React, { useState, useImperativeHandle, useRef, forwardRef, useEffect, memo } from 'react';
+import React, { useImperativeHandle, useRef, forwardRef, useEffect, memo } from 'react';
 
 interface ControlledInputProps {
   value?: string;

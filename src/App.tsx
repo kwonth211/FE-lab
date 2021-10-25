@@ -8,6 +8,7 @@ import Home from './components/home/Home';
 import Vanila from './components/vanila/index';
 import StateManangement from './components/state-management';
 import ReactDatetime from './components/react-datetime/ReactDatetime';
+import { HookDesign } from './components/hookDesign/HookDesign';
 
 /* 
     1. HOME (게임 또는 interaction view)
@@ -29,6 +30,7 @@ const App = () => {
         <Route path="/vanila" component={Vanila} />
         <Route path="/stateManagement" component={StateManangement} />
         <Route path="/react-datetime" component={ReactDatetime} />
+        <Route path="/hook-design" component={HookDesign} />
       </Layout>
     </Router>
   );

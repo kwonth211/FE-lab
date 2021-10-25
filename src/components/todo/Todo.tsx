@@ -1,5 +1,4 @@
 import React from 'react';
-import { useRef } from 'react';
 import { useState, FC, memo } from 'react';
 import { ControlledInput } from '../form/Input';
 import './Todo.scss';
